@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>henok company</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background: #f4f4f4;
+        }
+        header {
+            background: #333;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            margin: 0 1rem;
+            text-decoration: none;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        section {
+            padding: 2rem;
+            background: white;
+            margin: 1rem;
+            border-radius: 8px;
+        }
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background: #222;
+            color: #ccc;
+        }
+        button {
+            padding: 0.5rem 1rem;
+            margin-top: 1rem;
+            background: #007BFF;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+        button:hover {
+            background: #0056b3;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 0.5rem;
+            margin: 0.5rem 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>henok company</h1>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>hi i am Henok Animaw. and this is my persenal website i code this website yesterday and it is very hard. and last but not least i want to talk about Myy frindes that know code. 1, Nehimeya 2, Kalabe 3 ME HENOK</p>
+        <button onclick="showAlert()">Don't click me</button>
+    </section>
+
+    <section id="projects">
+        <h2>My Projects</h2>
+        <ul>
+            <li>Portfolio Website</li>
+            <li>Snake Game in Python</li>
+            <li>Basic Blog Template</li>
+        </ul>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form onsubmit="return submitForm(event)">
+            <label for="name">Name:</label>
+            <input type="text" id="name" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" rows="4" required></textarea>
+
+            <button type="submit">Send</button>
+        </form>
+        <p id="response" style="color: green;"></p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Henok company</p>
+    </footer>
+
+    <script>
+        function showAlert() {
+            alert("why you  such a thing by clicing me. How dare you do that. that is embarising. Kalabe you are my best frinde");
+        }
+
+        function submitForm(event) {
+            event.preventDefault();
+            const name = document.getElementById("name").value;
+            const message = document.getElementById("message").value;
+            document.getElementById("response").textContent = "Thank you, " + name + "! Your message was received.";
+            document.querySelector("form").reset();
+            return false;
+        }
+    </script>
+
+</body>
+</html>
