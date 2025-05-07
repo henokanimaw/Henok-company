@@ -3,117 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <title>Henok company</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            background: #f4f4f4;
-        }
-        header {
-            background: #333;
-            color: white;
-            padding: 1rem;
-            text-align: center;
-        }
-        nav a {
-            color: white;
-            margin: 0 1rem;
-            text-decoration: none;
-        }
-        nav a:hover {
-            text-decoration: underline;
-        }
-        section {
-            padding: 2rem;
-            background: white;
-            margin: 1rem;
-            border-radius: 8px;
-        }
-        footer {
-            text-align: center;
-            padding: 1rem;
-            background: #222;
-            color: #ccc;
-        }
-        button {
-            padding: 0.5rem 1rem;
-            margin-top: 1rem;
-            background: #007BFF;
-            color: white;
-            border: none;
-            cursor: pointer;
-            border-radius: 4px;
-        }
-        button:hover {
-            background: #0056b3;
-        }
-        input, textarea {
-            width: 100%;
-            padding: 0.5rem;
-            margin: 0.5rem 0;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-        }
-    </style>
 </head>
 <body>
 
     <header>
-        <h1>Henok company</h1>
+        <h1>Welcome to My Website</h1>
+        <h2> Henok company</h2>
+        <h3>sorry</h3>
         <nav>
-            <a href="#about">About</a>
-            <a href="#projects">Projects</a>
+            <a href="#about">About</a> |
+            <a href="#services">Services</a> |
             <a href="#contact">Contact</a>
         </nav>
     </header>
 
+    <hr>
+
     <section id="about">
         <h2>About Me</h2>
-        <p>Hi i am Henok Animaw. and this is my persenal website. i code this website as of today Friday,May/02/2025. And while i was codeing my Dad (Animaw) was always with me helping, and motivating me. And i want to thank God at first and then my father. I LOVE YOU DAD</p>
-        <button onclick="showAlert()">click me</button>
+        <p>Hello! I'm Henok Animaw. the CEO of Henok company and this is my 2nd Website. At the first Website you can't really send me anythig. But in this Website you can really send me, text and so much more. The first website is very beautful. But this is only ment to say SORRY. This Website is made to say sorry. YOU CAN CONTACT ME NOW IF THERE IS ANY PROBLEM.</p>
     </section>
 
-    <section id="projects">
-        <h2>My Projects</h2>
+    <section id="services">
+        <h2>My Services</h2>
         <ul>
-            <li>Portfolio Website</li>
-            <li>Calculator</li>
-            <li>Basic Blog Template</li>
+            <li>help&teach people</li>
+            <li>HTML Tutorials</li>
+            <li>Basic Web Hosting</li>
         </ul>
     </section>
 
     <section id="contact">
         <h2>Contact Me</h2>
-        <form onsubmit="return submitForm(event)">
-            <label for="name">Name:</label>
-            <input type="text" id="name" required>
-
-            <label for="message">Message:</label>
-            <textarea id="message" rows="4" required></textarea>
-
-            <button type="submit">Send</button>
-        </form>
-        <p id="response" style="color: green;"></p>
+        <p>Email: <a href="mailto:henokanimaw406@gmail.com">henokanimaw406@gmail.com</a></p>
     </section>
 
     <footer>
+        <hr>
         <p>&copy; 2025 Henok company</p>
     </footer>
-
-    <script>
-        function showAlert() {
-            alert("CONGURALUTION WE DID IT!!!!!!");
-        }
-
-        function submitForm(event) {
-            event.preventDefault();
-            const name = document.getElementById("name").value;
-            const message = document.getElementById("message").value;
-            document.getElementById("response").textContent = "Thank you, " + name + "! Your message was received.";
-            document.querySelector("form").reset();
-            return false;
-        }
-    </script>
 
 </body>
 </html>
